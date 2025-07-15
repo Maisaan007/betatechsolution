@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechFusion Inc. | Leadership Team</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .tab-active {
+      @apply bg-blue-100 text-blue-800;
+    }
+    .tab-inactive {
+      @apply bg-gray-100 text-gray-500 hover:bg-blue-50 hover:text-blue-700;
+    }
+    .avatar-animate {
+      transition: transform 0.4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .avatar-animate:hover {
+      transform: scale(1.08) rotate(-3deg);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center px-4 py-8">
+  <!-- Logo Centered -->
+  <div class="flex flex-col items-center mb-6">
+    <img src="logo.png" alt="logo" class="h-20 w-auto drop-shadow-md mx-auto">
+  </div>
+
+  <!-- Title -->
+  <h1 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-10 text-center tracking-tight">
+    Meet Our Leadership Team
+  </h1>
+
+  <!-- Tabs -->
+  <div id="tabs" class="flex flex-wrap justify-center mb-8 gap-3">
+    <button onclick="showTab(0)" id="tab0" class="px-4 py-2 rounded-full font-semibold tab-active shadow">Tom Tank</button>
+    <button onclick="showTab(1)" id="tab1" class="px-4 py-2 rounded-full font-semibold tab-inactive shadow">Isabella</button>
+    <button onclick="showTab(2)" id="tab2" class="px-4 py-2 rounded-full font-semibold tab-inactive shadow">Kaiox</button>
+    <button onclick="showTab(3)" id="tab3" class="px-4 py-2 rounded-full font-semibold tab-inactive shadow">Evangeline</button>
+    <button onclick="showTab(4)" id="tab4" class="px-4 py-2 rounded-full font-semibold tab-inactive shadow">Dr. Zerry Holland</button>
+  </div>
+
+  <!-- Tab Contents -->
+  <div class="w-full max-w-xl mx-auto bg-white shadow-2xl rounded-2xl p-8 transition-all duration-300 min-h-[360px] flex flex-col items-center">
+    <!-- Tom Tank -->
+    <div id="content0" class="tab-content flex flex-col items-center w-full">
+      <!-- Avatar: South Asian, 60s, Tom Tank -->
+      <div class="avatar-animate mb-4 mx-auto">
+        <img src="tom tank.png" alt="Tom Tank Avatar" class="w-40 h-40 rounded-full border-4 border-blue-100 object-cover shadow-lg bg-white" />
+      </div>
+      <h2 class="text-2xl font-bold text-blue-900 mb-2 text-center">Tom Tank</h2>
+      <p class="text-blue-700 font-semibold mb-1 text-center">Senior Project Manager</p>
+      <p class="text-gray-700 text-center mt-2">
+        Tom Tank is a solid, seasoned project leader with a lifetime of expertise in hardware engineering. Known for his strategic insight, hands-on leadership, and remarkable ability to turn vision into reality, Tom’s work empowers TechFusion to deliver excellence on every project, every time.
+      </p>
+    </div>
+    <!-- Isabella -->
+    <div id="content1" class="tab-content hidden flex-col items-center w-full">
+      <div class="avatar-animate mb-4 mx-auto">
+        <!-- Use this for hijab version: -->
+        <img src="Isabella.png" alt="Isabella Avatar" class="w-40 h-40 rounded-full border-4 border-pink-100 object-cover shadow-lg bg-white" />
+        <!-- Use this for business suit version:
+        <img src="Isabella.png" alt="Isabella Avatar" class="w-40 h-40 rounded-full border-4 border-pink-100 object-cover shadow-lg bg-white" />
+        -->
+      </div>
+      <h2 class="text-2xl font-bold text-blue-900 mb-2 text-center">Isabella</h2>
+      <p class="text-blue-700 font-semibold mb-1 text-center">HR Business Partner</p>
+      <p class="text-gray-700 text-center mt-2">
+        Isabella is the heart of people strategy at TechFusion. Her approachable leadership, sharp insight, and passion for talent development make her the driving force behind a culture of growth, unity, and resilience.
+      </p>
+    </div>
+    <!-- Kaiox -->
+    <div id="content2" class="tab-content hidden flex-col items-center w-full">
+      <div class="avatar-animate mb-4 mx-auto">
+        <img src="kiox.png" alt="Kaiox Avatar" class="w-40 h-40 rounded-full border-4 border-green-100 object-cover shadow-lg bg-white" />
+      </div>
+      <h2 class="text-2xl font-bold text-blue-900 mb-2 text-center">Kaiox</h2>
+      <p class="text-blue-700 font-semibold mb-1 text-center">Senior AI Analyst</p>
+      <p class="text-gray-700 text-center mt-2">
+        Kaiox is the tech-savvy Gen Z innovator fusing AI, robotics, and analytics into transformative solutions. Her geek-chic style and data-driven brilliance keep TechFusion on the cutting edge of the digital revolution.
+      </p>
+    </div>
+    <!-- Evangeline -->
+    <div id="content3" class="tab-content hidden flex-col items-center w-full">
+      <div class="avatar-animate mb-4 mx-auto">
+        <img src="Evangeline.png" alt="Evangeline Avatar" class="w-40 h-40 rounded-full border-4 border-yellow-100 object-cover shadow-lg bg-white" />
+      </div>
+      <h2 class="text-2xl font-bold text-blue-900 mb-2 text-center">Evangeline</h2>
+      <p class="text-blue-700 font-semibold mb-1 text-center">Mergers & Acquisitions Lawyer</p>
+      <p class="text-gray-700 text-center mt-2">
+        Evangeline is the trusted legal architect for TechFusion’s most ambitious moves. Her sharp mind and confident counsel make her an unbeatable ally in any boardroom or courtroom.
+      </p>
+    </div>
+    <!-- Dr. Zerry Holland -->
+    <div id="content4" class="tab-content hidden flex-col items-center w-full">
+      <div class="avatar-animate mb-4 mx-auto">
+        <img src="Dr. Zerry Holland.png" alt="Dr. Zerry Holland Avatar" class="w-40 h-40 rounded-full border-4 border-blue-200 object-cover shadow-lg bg-white" />
+      </div>
+      <h2 class="text-2xl font-bold text-blue-900 mb-2 text-center">Dr. Zerry Holland</h2>
+      <p class="text-blue-700 font-semibold mb-1 text-center">Vice President, Hardware Operations</p>
+      <p class="text-gray-700 text-center mt-2">
+        Dr. Zerry Holland is the engineering mastermind blending next-gen hardware with real-world solutions. With a heart for innovation and a knack for team building, he leads TechFusion’s hardware vision from concept to launch.
+      </p>
+    </div>
+  </div>
+
+  <!-- Tabs JS -->
+  <script>
+    function showTab(idx) {
+      for (let i = 0; i < 5; i++) {
+        document.getElementById('content'+i).classList.add('hidden');
+        document.getElementById('tab'+i).classList.remove('tab-active');
+        document.getElementById('tab'+i).classList.add('tab-inactive');
+      }
+      document.getElementById('content'+idx).classList.remove('hidden');
+      document.getElementById('tab'+idx).classList.remove('tab-inactive');
+      document.getElementById('tab'+idx).classList.add('tab-active');
+    }
+  </script>
+</body>
+</html>
